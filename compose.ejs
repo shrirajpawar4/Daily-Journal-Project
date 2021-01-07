@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose</title>
+    <%- include("partials/header"); %> 
+ </head>
+<body>
+    <h1>Compose New Blog</h1>
+    
+    <form action="/compose" method="post">
+    <div class="form-group">
+        <label class="form-label">Title</label>
+        <input type="text" name="postTitle" class="form-control" id="formGroupExampleInput" placeholder="Your Title">
+     
+        <label class="form-label">Post</label>
+        <textarea name="postBody" class="form-control" id="formGroupExampleInput2" cols="10" rows="5" placeholder="Your Post"></textarea>
+    </div>
+        <button type="submit" class="btn btn-primary" >Publish!</button>    
+    </form>
+    
+</body>
+ <%- include("partials/footer"); %> 
+</html>
